@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>投票系统</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- 引入外部JavaScript文件 -->
+    <script src="./script.js"></script>
+</head>
+<body>
+    <img src="./学通社动态LOGO.gif" alt="">
+    <h1>请选择好稿或好图</h1>
+    <section id="content-links">
+        <h2>好稿类</h2>
+        <ul>
+            <li><a href="http://news.hzau.edu.cn/info/1013/16880.htm" onclick="showContent('text1')">第十二届华中高校外文歌曲大赛七校总决赛在我校举办</a></li>
+            <li><a href="https://m.thepaper.cn/newsDetail_forward_27404161" onclick="showContent('text2')">《他们，为何“最美”》</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16661.htm" onclick="showContent('text3')">《2024“狮子山杯”篮球赛揭幕，卫冕冠军经济管理学院男篮取首胜》</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/_AW9-lnrEN9y54kj-lfsQg" onclick="showContent('text5')">公园20分钟效应：自然是疗愈之法</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/E74iSnbhRG6-IaAWmeNR9Q" onclick="showContent('text6')">人与树共舞</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16353.htm" onclick="showContent('text7')">荟聚校园创意，激发创作灵感！野芷原创荟系列活动举行</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16231.htm" onclick="showContent('text8')">如虎添翼 展翅高飞 7800余学子顺利毕业</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1013/16876.htm" onclick="showContent('text9')">《品虫盛宴，食语新篇：第六届昆虫宴圆满谢幕》</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16226.htm" onclick="showContent('text10')">【狮山骊歌】风雨无阻，“钢铁长龙”为2024届毕业生壮行</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1013/16877.htm" onclick="showContent('text11')">舞台剧《归来》在大学生活动中心演出</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16219.htm" onclick="showContent('text12')">【狮山骊歌】水产学院举办“龙虾节”活动欢送2024届毕业生</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1017/16889.htm" onclick="showContent('text13')">永远向上，再看排球场上的“她们”！</a></li>
+            
+        </ul>
+
+        <h2>好图类</h2>
+        <ul>
+            <li><a href="https://mp.weixin.qq.com/s/pIqegLkJZJxX_CIljjzU-w" onclick="showContent('text4')">五一特稿 ¦ 这个五一，大家都在做什么？</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16667.htm" onclick="showContent('image1')">2024年“教工杯”排球赛落幕</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16231.htm" onclick="showContent('image2')">如虎添翼 展翅高飞 2024年毕业典礼隆重举行</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16492.htm" onclick="showContent('image3')">终场绝杀 资源与环境学院本科生男篮问鼎2024“狮子山杯”</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16250.htm" onclick="showContent('image4')">2024年教职工篮球联赛圆满落幕</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16492.htm" onclick="showContent('image5')">终场绝杀 资源与环境学院本科生男篮问鼎2024“狮子山杯”</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1007/16629.htm" onclick="showContent('image6')">【光明日报】华中农业大学：野芷原创荟 展青春风采</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16412.htm" onclick="showContent('image7')">彩绳结情 香粽聚谊：后保部举办“师生融乐端午节”活动 图3、7、11、14</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16213.htm" onclick="showContent('image8')">2024“狮子山杯”游泳比赛圆满落幕</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16544.htm" onclick="showContent('image9')">荧光溢彩幸福跑 水花绽放尽欢颜</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16226.htm" onclick="showContent('image10')">【狮山骊歌】风雨无阻，“钢铁长龙”为2024届毕业生壮行 </a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16436.htm" onclick="showContent('image11')">逆风翻盘：植物科学技术学院女篮捧起“狮子山杯”</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1007/16447.htm" onclick="showContent('image12')">【光明日报】华中农业大学举行“钢铁长龙”2024毕业巡游</a></li>
+            <li><a href="http://news.hzau.edu.cn/info/1009/16219.htm" onclick="showContent('image13')">水产学院毕业季“龙虾节“活动</a></li>
+
+        </ul>
+    </section>
+
+    <div id="content-page" style="display:none;">
+        <button onclick="closeContent()">关闭</button>
+        <form id="vote-form" onsubmit="return submitVote();">
+            <h2 id="content-title"></h2>
+            <p id="content-description"></p>
+            <img id="content-image" src="" alt="">
+            <fieldset>
+                <legend>请为这篇文章/图片评分:</legend>
+                <label>
+                    <input type="radio" name="rating" value="1">1
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2">2
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3">3
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4">4
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5">5
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="6">6
+                </label>
+            </fieldset>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</body>
+</html>
